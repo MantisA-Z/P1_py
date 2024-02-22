@@ -1,2 +1,12 @@
-def reverse_str(str):
-    return str[::-1]
+def ends_with(str, end):
+    j = -1
+    try:
+        for i in end[::-1]:
+            if i != str[j]:
+                return False
+            j -= 1
+    except IndexError:
+        return False
+    return True
+
+print(ends_with('ablkfjaslc', 'dabc'))
