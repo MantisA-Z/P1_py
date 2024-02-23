@@ -1,7 +1,6 @@
-i = 0
-text = f'Hello World!\n' * 500
-while i <= 1000:
+text = f'Hello World!\n' * 100000
+flag = True
+while flag == True:
     with open(f'file.txt{i}', 'w') as file:
         file.write(text)
-    i += 1
     print(':)\n')
