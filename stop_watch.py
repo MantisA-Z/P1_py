@@ -12,7 +12,7 @@ def count_down(duration):
 
 #Taking time from user
 try:
-    duration = (input('Enter the time: ')) #example: 12:03:02 (Enter a valid time)
+    duration = input('Enter the time: ') #example: 12:03:02 (Enter a valid time)
     duration = duration.split(':')
     duration = int(duration[0]) * 3600 + int(duration[1]) * 60 + int(duration[2])
     count_down(duration)#Calling function after taking a specific time
